@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head> 
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+      
+      img {
+        width: 15%;
+        border: 2px solid #000;
+      }
+
+      body{
+        text-align: center;
+        font-family: 'Dancing Script', cursive;
+        font-size: 3rem;
+        background-image: url(images/bg.png);
+        background-position: center;
+        background-size: 160%;
+      } 
+
+      
+    </style>
+</head>
+<body>
+<h1>Photos display</h1>
+  <script>
+
+  document.write('<div>');
+  
+  img = ["pic1.jpg","pic2.jpg","pic3.jpg","pic4.jpg", "pic5.jpg"];
+
+      for (let i=0; i<=img.length-1; i++){
+         document.write('<img src="./images/'+ img[i] +'"/>');
+       
+      }
+ 
+    document.write('</div>');
+
+    // document.write('<img src="./images/'+img[0]+'"/>');
+    //document.write('<img src="./images/'+img[1]+'"/>');
+    //document.getElementById("display").innerHTML = '<img src="./images/'+ pic +'"/>';
+
+  </script>
+
+
+</body>
+</html>
