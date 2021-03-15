@@ -28,13 +28,24 @@
         {state:"Arkansas", capital:"Little Rock"} 
     ];
     
-    //stateCapitals.forEach((value) => value.capital);
-const sortST = {};
+//stateCapitals.forEach((value) => value.capital);
+//const sortST = [];
 // sort in ascending (1) order by length
-const sort = { state: 1};
-const display = stateCapitals
-.find(sortST)
-.sort(sort)
-.map(st => `<tr><td>${st.state}</td><td>${st.capital}</td></tr>`);
+//const sort = { state: 1};
 
+const sortST = stateCapitals.sort((a, b) => {
+    let fa = a.state.toLowerCase(),
+        fb = b.state.toLowerCase();
+
+    if (fa < fb) {
+        return -1;
+    }
+    if (fa > fb) {
+        return 1;
+    }
+    return 0;
+});
+
+const display = sortST
+.map(st => `<tr><td>${st.state}</td><td>${st.capital}</td></tr>`).join("");
 document.getElementById("display").innerHTML = display
