@@ -9,8 +9,8 @@ const photos =  [
 ]
  
  
-  const display = photos.map(img => `<img src="${img.url}">`)
-  document.getElementById("photos").innerHTML = display
+  const display = photos.map(img => `<img src="${img.url}">`).join('');
+  document.getElementById("images").innerHTML = display
  
  
  
