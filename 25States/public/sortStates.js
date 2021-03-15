@@ -14,7 +14,7 @@
         {state:"Maryland", capital:"Annapolis"},
         {state:"Oregon", capital:"Salem"},
         {state:"Colorado", capital:"Denver"},
-        {state:"Connecticut", capital:"Hartford"},
+        {state:"Illinois",	capital:"Springfield"},
         {state:"Michigan", capital:"Lansing"},
         {state:"Pennsylvania", capital:"Harrisburg"},
         {state:"Washington", capital:"Olympia"},
